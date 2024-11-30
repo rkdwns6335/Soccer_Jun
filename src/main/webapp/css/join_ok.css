@@ -1,0 +1,56 @@
+/* 전체 문서에 폰트 적용 */
+body {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목 스타일 */
+.container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 본문 텍스트 스타일 */
+.container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* 버튼 스타일 */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color:#555;
+}
+
+/* 푸터 스타일 */
+#footer {
+    padding: 20px;
+    text-align: center;
+}

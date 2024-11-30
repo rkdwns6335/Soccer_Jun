@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+    <!-- 수정된 CSS 경로 (절대 경로 사용) -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="content">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- 수정된 이미지 경로 (절대 경로 사용) -->
+                <div class="swiper-slide"><img src="img/index1.jpg" alt="Slide 1"></div>
+                <div class="swiper-slide"><img src="img/index2.jpg" alt="Slide 2"></div>
+                <div class="swiper-slide"><img src="img/index3.jpg" alt="Slide 3"></div>
+                <div class="swiper-slide"><img src="img/index4.jpg" alt="Slide 4"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div id="footer"></div>
+
+    <!-- 수정된 JS 경로 -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/header+footer.js"></script>
+
+    <script type="text/javascript">
+        // Swiper 초기화
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            loop: true
+        });
+    </script>
+</body>
+</html>

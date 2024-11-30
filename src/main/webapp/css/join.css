@@ -1,0 +1,98 @@
+/* 전체 문서에 폰트 적용 */
+body {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 가입 폼 스타일 */
+#join {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 폼 제목 스타일 */
+#join h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 테이블 스타일 (폼을 감싸는 테이블) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* 테이블 셀 스타일 */
+td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: top; /* 각 셀의 내용이 상단에 정렬되도록 설정 */
+}
+
+/* 입력 필드 스타일 */
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px); /* 좌우 패딩을 고려하여 너비 조정 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* padding과 border를 포함한 너비 조정 */
+}
+
+/* 버튼 스타일 */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* 중복검사 버튼 스타일 */
+#checkId {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#checkId:hover {
+    background-color: #0056b3;
+}
+
+/* 각 입력 필드 아래의 결과 메시지 스타일 */
+#idDiv, #pwdDiv, #nameDiv, #addrDiv, #phoneDiv {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+/* 에러 메시지 스타일 */
+#error-message {
+    color: red;
+}
+
+/* 성공 메시지 스타일 */
+#success-message {
+    color: blue;
+}

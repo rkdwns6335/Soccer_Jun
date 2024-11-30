@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Team View</title>
+<link rel="stylesheet" type="text/css" href="../css/match.css">
+</head>
+<body>
+	<div id="header"></div>
+
+	<div id="content">
+	<h1>게시글 상세 정보</h1>
+	<div id="board-detail">
+		<table id="post-detail-table">
+        	<tr>
+            	<th>번호</th>
+                <td id="b_seq"></td>
+            </tr>
+            <tr>
+            	<th>제목</th>
+                <td id="b_title"></td>
+            </tr>
+            <tr>
+            	<th>내용</th>
+                <td id="b_content"></td>
+            </tr>
+            <tr>
+            	<th>작성자</th>
+                <td id="b_name"></td>
+            </tr>
+            <tr>
+            	<th>작성일</th>
+                <td id="b_logtime"></td>
+            </tr>
+        </table>	
+        <button id="btn-back" onclick="history.back()">뒤로 가기</button>
+    </div>
+	</div>
+	<div id="footer"></div>
+</body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="../js/header+footer.js"></script>
+</html>

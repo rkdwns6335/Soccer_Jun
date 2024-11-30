@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<link rel="stylesheet" href="../css/join.css">
+</head>
+<body>
+	<div id="header"></div>
+	<form id="join" method="post" action="../jsp/join.jsp"> <!-- form 제출로 서버로 전송 -->
+	<h1>회원가입</h1>
+	<div class="signup-wrapper">
+        <table>
+            <tr>
+                <td><label for="u_id">아이디</label></td>
+                <td>
+                    <input type="text" id="u_id" name="u_id" placeholder="아이디 입력" required>
+                    <div id="idDiv"></div> <!-- 아이디 입력 필드 바로 아래에 결과 표시 -->
+                </td>
+            </tr>
+            <tr>
+                <td><label for="u_pw">비밀번호</label></td>
+                <td>
+                    <input type="password" id="u_pw" name="u_pw" placeholder="비밀번호 입력" required>
+                    <div id="pwdDiv"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="u_name">이름</label></td>
+                <td>
+                    <input type="text" id="u_name" name="u_name" placeholder="이름 입력" required>
+                    <div id="nameDiv"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="u_addr">주소</label></td>
+                <td>
+                    <input type="text" id="u_addr" name="u_addr" placeholder="주소 입력" required>
+                    <div id="addrDiv"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="u_phone">전화번호</label></td>
+                <td>
+                    <input type="text" id="u_phone" name="u_phone" required placeholder="예)000-0000-0000">
+                    <div id="phoneDiv"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="grade">등급</label></td>
+                <td>
+                	<input type="radio" name="grade" value="1"> 관리자
+                	<input type="radio" name="grade" value="2" checked> 회원
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="가입하기" class="btn"></td>
+            </tr>
+        </table>
+    </div>
+    </form>
+	<div id="footer"></div>
+</body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="../js/header+footer.js"></script>
+<script type="text/javascript" src="../js/chk_Id.js"></script>
+<script type="text/javascript" src="../js/join.js"></script>
+</html>

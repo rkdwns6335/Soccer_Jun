@@ -1,0 +1,49 @@
+/* 기본 스타일 리셋 */
+body, h1, h2, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+/* 전체 페이지 스타일 */
+html, body {
+    height: 100%; /* 전체 페이지 높이 설정 */
+    margin: 0;
+}
+
+/* 콘텐츠 스타일 */
+.content {
+    padding: 20px; /* 콘텐츠에 여백 추가 */
+    padding-bottom: 60px; /* 푸터 높이만큼 여백 추가 */
+}
+
+/* 푸터 스타일 */
+.footer-content {
+    position: fixed; /* 고정 위치 */
+    bottom: 0; /* 페이지 하단에 위치 */
+    left: 0; /* 왼쪽 끝에 위치 */
+    width: 100%; /* 전체 너비 */
+    color: #DCDCDD; /* 글씨 색상 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    padding: 20px; /* 여백 추가 */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+}
+
+/* 푸터 텍스트 스타일 */
+.footer-content p {
+    margin: 0; /* 기본 여백 제거 */
+    font-size: 14px; /* 글씨 크기 */
+    line-height: 1.5; /* 줄 간격 */
+}
+
+.footer-content a {
+    color: #4CAF50; /* 링크 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* 호버 시 밑줄 표시 */
+}
